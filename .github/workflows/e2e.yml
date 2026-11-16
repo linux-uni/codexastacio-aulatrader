@@ -1,0 +1,23 @@
+name: Pruebas navegador AulaTrader
+on:
+  push:
+    branches: [main, 'feature/**']
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Instalar Playwright
+        run: npm install --no-save playwright@1.57.0
+      - name: Preparar Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Ejecutar interacción real de navegador móvil
+        run: node tests/e2e.cjs
