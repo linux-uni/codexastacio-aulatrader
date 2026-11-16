@@ -262,6 +262,12 @@
       else if(/diario|registro|emocion|anotar|bitacora/.test(norm))resp='Abre Laboratorio y escribe una reflexión de tu práctica. Un diario ayuda a detectar errores de decisión y emociones.';
       else if(/comision|costo|slippage|deslizamiento/.test(norm))resp='Los costos importan: investiga comisiones, spread y slippage. Incluso una operación con movimiento favorable puede terminar en pérdida neta.';
       else if(/estafa|regulacion|seguridad|promesa/.test(norm))resp='Evita promesas de ganancias garantizadas, pagos urgentes y compartir claves. Verifica registros oficiales del proveedor.';
+      else if(/drawdown|recuperacion|capital desde un maximo/.test(norm))resp='El drawdown es una caída desde un máximo de capital observado. Por ejemplo, perder 50% exige ganar 100% sobre el capital restante para recuperarte. Puedes practicar en Laboratorio avanzado.';
+      else if(/esperanza|valor esperado|tasa de aciertos|winrate|probabilidades/.test(norm))resp='Esperanza matemática teórica = probabilidad de ganar × ganancia media − probabilidad de perder × pérdida media − costos. No predice la próxima operación; pruébala en Laboratorio avanzado.';
+      else if(/backtest|sobreajuste|sobreajust|sesgo de supervivencia/.test(norm))resp='Un backtest puede engañar si se adaptan reglas a datos antiguos, si faltan activos desaparecidos o si se mira información futura. Busca la lección “Backtesting, sesgos y sobreajuste”.';
+      else if(/stop.limit|stop limit|trailing/.test(norm))resp='Una orden stop puede activarse y ejecutarse a otro precio. Una stop-limit puede quedar sin ejecución. Consulta la lección “Stop, stop-limit y órdenes pendientes” y su fuente oficial de Investor.gov.';
+      else if(/grafico pro|gráfico pro|lightweight|media movil|sma/.test(norm))resp='En Simulador activa “Gráfico Pro” para explorar velas ficticias, zoom y una media móvil SMA(10). No utiliza precios reales ni emite señales de inversión.';
+
       addBot(resp);
     }
     $('loginForm').onsubmit=e=>{e.preventDefault();const email=$('email').value.trim().toLowerCase(),pass=$('password').value; if(email==='demo@aula.local'&&pass==='Demo1234'){state.logged=true;save();$('loginError').textContent='';showApp();}else{$('loginError').textContent='Credenciales de prueba incorrectas. Usa los datos del recuadro.';}};
