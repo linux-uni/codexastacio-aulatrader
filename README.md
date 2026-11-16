@@ -1,12 +1,12 @@
 # AulaTrader — CodeXaStacio
 
-Academia de trading desde cero (versión de demostración). Web app estática en español, lista para alojarse en **GitHub Pages**, sin dependencias ni compilación.
+Academia de trading desde cero (versión de demostración). Web app estática en español, lista para alojarse en **GitHub Pages**, con compilación automática en GitHub Actions para la biblioteca gráfica oficial.
 
 ## Funciones
 
 - Inicio de sesión de **demostración**, sin servidor ni cuentas reales.
 - Menú adaptable para PC y teléfono.
-- 12 lecciones introductorias, glosario ampliado, examen de 10 preguntas y logros.
+- 22 lecciones introductorias y avanzadas, glosario ampliado, examen de 15 preguntas y actividades de repaso.
 - Simulador educativo con capital ficticio de USD 10,000 y precios generados aleatoriamente.
 - Mentor **DANTE** con avatar ilustrado y respuestas programadas (todavía **no** usa IA generativa).
 - Progreso y cartera ficticia guardados en `localStorage` del navegador.
@@ -85,3 +85,17 @@ node tests/e2e.cjs
 
 Consulta [las referencias y decisiones de arquitectura](docs/comparativa-y-arquitectura.md).
 La aplicación sigue siendo **educativa y de demostración**, sin cuentas reales, feed de cotizaciones ni recomendaciones personalizadas.
+
+## AulaTrader v3 · Educación verificable y gráficos profesionales
+
+- **22 lecciones** en total; 10 nuevas con ejemplos, autoevaluaciones, fuentes SEC, FINRA y CFTC.
+- **15 preguntas de repaso** para el test general, más una pregunta al final de cada nueva lección.
+- Búsqueda y filtros por nivel en el catálogo, preservando el progreso local.
+- **Laboratorio avanzado**: costo neto de ida/vuelta, esperanza matemática y drawdown.
+- **Gráfico Pro** interactivo opcional con [TradingView Lightweight Charts](https://github.com/tradingview/lightweight-charts) v5.3.0, instalado por npm durante el despliegue.
+- Datos de práctica inventados, SMA(10) sobre cierres ficticios; el gráfico original permanece disponible.
+- Licencia Apache 2.0 y atribución de TradingView preservadas bajo `vendor/`.
+
+Lee la [investigación, arquitectura y fuentes de AulaTrader v3](docs/fuentes-educacion-y-laboratorio-v3.md).
+
+**IMPORTANTE:** no existe conexión a brokers, precios reales, IA generativa ni autenticación segura. Las herramientas son para el aprendizaje y no deben utilizarse para decidir inversiones reales.
