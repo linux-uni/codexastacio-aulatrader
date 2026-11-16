@@ -56,3 +56,8 @@ La rama `codexastacio-aulatrader-preview` contiene una copia aislada de AulaTrad
 - **Estética:** traje azul marino, acentos turquesa y retrato realista optimizado en `dante-realista.webp` (la ilustración original se conserva en `dante-avatar.svg`).
 - **Límites actuales:** las respuestas son locales y preprogramadas; no hay chatbot de IA conectado, señales de inversión ni asesoramiento financiero personalizado.
 - **Interfaz:** avatar y nombre visibles en el botón de ayuda, encabezado del chat, lecciones y bienvenida.
+
+
+## Botón flotante de consulta (v1.2)
+
+El botón que abre el chat ahora usa el ícono futurista de ayuda `dante-help-futurista.webp` con símbolo de interrogación. El retrato realista `dante-realista.webp` se conserva en el encabezado del chat. El botón es accesible mediante etiqueta `Consultar a DANTE` y funciona en dispositivos móviles.
