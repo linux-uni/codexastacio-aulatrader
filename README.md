@@ -6,7 +6,7 @@ Academia de trading desde cero (versión de demostración). Web app estática en
 
 - Inicio de sesión de **demostración**, sin servidor ni cuentas reales.
 - Menú adaptable para PC y teléfono.
-- 7 lecciones introductorias, glosario y evaluación.
+- 12 lecciones introductorias, glosario ampliado, examen de 10 preguntas y logros.
 - Simulador educativo con capital ficticio de USD 10,000 y precios generados aleatoriamente.
 - Mentor **DANTE** con avatar ilustrado y respuestas programadas (todavía **no** usa IA generativa).
 - Progreso y cartera ficticia guardados en `localStorage` del navegador.
@@ -61,3 +61,27 @@ La rama `codexastacio-aulatrader-preview` contiene una copia aislada de AulaTrad
 ## Botón flotante de consulta (v1.2)
 
 El botón que abre el chat ahora usa el ícono futurista de ayuda `dante-help-futurista.webp` con símbolo de interrogación. El retrato realista `dante-realista.webp` se conserva en el encabezado del chat. El botón es accesible mediante etiqueta `Consultar a DANTE` y funciona en dispositivos móviles.
+
+
+## AulaTrader v2 · Laboratorio de aprendizaje
+
+- **12 lecciones** con más información sobre costos, velas, análisis, noticias y prevención de estafas.
+- **10 preguntas** de repaso y logros por progresos reales.
+- **Herramientas de riesgo:** calcula pérdida hipotética en USD, unidades, valor de la posición y relación beneficio/riesgo para operaciones largas de prueba.
+- **Diario** de reflexión local, con borrado y exportación JSON (no sincroniza).
+- **Simulador** con alternancia entre gráfica de línea y velas ficticias.
+- **DANTE** responde a nuevas preguntas sobre herramientas, costos, seguridad y diario (reglas locales, sin IA generativa).
+- **PWA de recursos estáticos** con manifest y service worker; el instalador depende de la compatibilidad del navegador.
+
+### Tests
+
+```sh
+node --test tests/*.test.js
+# Opcional: npm install playwright@1.57.0 && npx playwright install chromium
+node tests/e2e.cjs
+```
+
+### Comparativa y transparencia
+
+Consulta [las referencias y decisiones de arquitectura](docs/comparativa-y-arquitectura.md).
+La aplicación sigue siendo **educativa y de demostración**, sin cuentas reales, feed de cotizaciones ni recomendaciones personalizadas.
