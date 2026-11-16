@@ -16,7 +16,11 @@ jobs:
         with:
           node-version: '22'
       - name: Instalar Playwright
-        run: npm install --no-save playwright@1.57.0
+        run: npm install --no-save --no-audit --no-fund playwright@1.57.0 lightweight-charts@5.3.0
+      - name: Copiar dependencia gráfica para pruebas
+        run: |
+          mkdir -p vendor
+          cp node_modules/lightweight-charts/dist/lightweight-charts.standalone.production.js vendor/
       - name: Preparar Chromium
         run: npx playwright install --with-deps chromium
       - name: Ejecutar interacción real de navegador móvil
