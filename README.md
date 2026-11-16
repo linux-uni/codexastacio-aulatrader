@@ -8,7 +8,7 @@ Academia de trading desde cero (versión de demostración). Web app estática en
 - Menú adaptable para PC y teléfono.
 - 7 lecciones introductorias, glosario y evaluación.
 - Simulador educativo con capital ficticio de USD 10,000 y precios generados aleatoriamente.
-- Tutor Lía con respuestas programadas (todavía **no** usa IA generativa).
+- Mentor **DANTE** con avatar ilustrado y respuestas programadas (todavía **no** usa IA generativa).
 - Progreso y cartera ficticia guardados en `localStorage` del navegador.
 
 **Credenciales demo**: `demo@aula.local` / `Demo1234`.
@@ -46,3 +46,13 @@ La rama `codexastacio-aulatrader-preview` contiene una copia aislada de AulaTrad
 `index.html` y `favicon.svg` están en la raíz para su publicación mediante GitHub Pages. El workflow `.github/workflows/pages.yml` despliega automáticamente cada actualización en `main` una vez que Pages tenga como fuente **GitHub Actions** en Settings → Pages.
 
 **Importante:** Esta primera versión solo es una demostración educativa con datos simulados. El login no es autenticación real, no se envían operaciones a mercados y el tutor todavía no se conecta a un modelo de IA ni sustituye asesoramiento financiero.
+
+
+## DANTE — Identidad del mentor (v1.1)
+
+- **Nombre:** DANTE
+- **Papel:** Mentor educativo de trading para principiantes.
+- **Personalidad:** seguro, sereno, claro, cercano y disciplinado. Explica sin prometer ganancias.
+- **Estética:** traje azul marino, acentos turquesa y retrato ilustrado en `dante-avatar.svg`.
+- **Límites actuales:** las respuestas son locales y preprogramadas; no hay chatbot de IA conectado, señales de inversión ni asesoramiento financiero personalizado.
+- **Interfaz:** avatar y nombre visibles en el botón de ayuda, encabezado del chat, lecciones y bienvenida.
