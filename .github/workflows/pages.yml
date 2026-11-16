@@ -28,7 +28,7 @@ jobs:
       - name: Preparar archivos web
         run: |
           mkdir -p _site
-          cp index.html favicon.svg dante-avatar.svg _site/
+          cp index.html favicon.svg dante-avatar.svg dante-realista.webp _site/
           touch _site/.nojekyll
       - name: Subir sitio estatico
         uses: actions/upload-pages-artifact@v4
