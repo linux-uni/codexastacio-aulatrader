@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">DANTE, mentor de AulaTrader</title>
+  <desc id="desc">Retrato ilustrado de un mentor masculino elegante, con traje oscuro y corbata turquesa.</desc>
+  <defs>
+    <linearGradient id="back" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10263d"/><stop offset="1" stop-color="#0a625e"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9b38f"/><stop offset=".55" stop-color="#bc7c5c"/><stop offset="1" stop-color="#94573d"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#273e59"/><stop offset="1" stop-color="#091728"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="25" fill="url(#back)"/>
+  <circle cx="125" cy="29" r="64" fill="#52ebd0" opacity=".10"/>
+  <path d="M0 140 35 118 57 112 80 120 102 112 126 118 160 140V160H0Z" fill="url(#suit)"/>
+  <path d="m60 112 20 25 21-25-7-7H67Z" fill="#f1f6fa"/>
+  <path d="m77 119 6 0 4 11-7 18-7-18Z" fill="#5ff0d2"/>
+  <path d="m57 113 23 31-24-11-13-15Z" fill="#162941"/>
+  <path d="m103 113-23 31 25-11 13-15Z" fill="#162941"/>
+  <path d="M67 93h27v22c-4 7-10 10-14 10s-10-3-13-10Z" fill="#b77b5f"/>
+  <path d="M55 61c0-24 9-39 25-40 16 1 25 16 25 40v23c0 25-14 35-25 35S55 109 55 84Z" fill="url(#skin)"/>
+  <path d="M56 68c-6-3-10 1-9 9s6 14 11 13M104 68c6-3 10 1 9 9s-6 14-11 13" fill="#b97c60" stroke="#a5654b" stroke-width="1.5"/>
+  <path d="M54 71c-3-19 0-35 8-43 6-11 18-14 32-11 11 3 18 12 19 27 1 11-2 20-7 27-1-18-5-29-10-34-10 10-25 15-41 13-2 6-1 15-1 21Z" fill="#14202a"/>
+  <path d="M57 51c11-2 25-5 38-16" stroke="#314052" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M62 70q7-4 15 0M85 70q7-4 14 0" stroke="#47302c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M68 76h6m14 0h6" stroke="#223240" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="m80 77-3 14q3 3 7 0" fill="none" stroke="#935b45" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M69 102q11 6 22 0" fill="none" stroke="#743c34" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M55 87q3 22 14 28m36-28q-3 22-14 28" stroke="#7e503f" stroke-width="1.5" opacity=".3" fill="none"/>
+  <path d="M132 27h11m-5.5-5.5v11" stroke="#78f7da" stroke-width="2" stroke-linecap="round"/>
+</svg>
