@@ -1,0 +1,23 @@
+{
+  "name": "CodeXaStacio AulaTrader — Aprende con DANTE",
+  "short_name": "AulaTrader",
+  "description": "Academia interactiva de trading desde cero con simulador de dinero ficticio y herramientas educativas.",
+  "lang": "es-DO",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071428",
+  "theme_color": "#0b2737",
+  "icons": [
+    {
+      "src": "./app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "education",
+    "finance"
+  ]
+}
