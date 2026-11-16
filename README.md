@@ -53,6 +53,6 @@ La rama `codexastacio-aulatrader-preview` contiene una copia aislada de AulaTrad
 - **Nombre:** DANTE
 - **Papel:** Mentor educativo de trading para principiantes.
 - **Personalidad:** seguro, sereno, claro, cercano y disciplinado. Explica sin prometer ganancias.
-- **Estética:** traje azul marino, acentos turquesa y retrato ilustrado en `dante-avatar.svg`.
+- **Estética:** traje azul marino, acentos turquesa y retrato realista optimizado en `dante-realista.webp` (la ilustración original se conserva en `dante-avatar.svg`).
 - **Límites actuales:** las respuestas son locales y preprogramadas; no hay chatbot de IA conectado, señales de inversión ni asesoramiento financiero personalizado.
 - **Interfaz:** avatar y nombre visibles en el botón de ayuda, encabezado del chat, lecciones y bienvenida.
