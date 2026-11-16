@@ -1,0 +1,44 @@
+/* CodeXaStacio AulaTrader v3 - biblioteca y laboratorio DANTE */
+.v3-learn-filter{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 20px}
+.v3-learn-filter label{font-weight:750;font-size:13px;color:#c9e7ee}
+.v3-learn-filter input,.v3-learn-filter select{min-height:43px;color:#e9faf9;background:#102e45;border:1px solid #476e81;border-radius:11px;padding:10px 12px;min-width:0}
+.v3-learn-filter input{flex:1;min-width:min(100%,210px)}
+.v3-learn-filter select{min-width:142px}
+.v3-sources{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 6px}
+.v3-sources a{display:inline-flex;align-items:center;gap:4px;color:#79f2d6;border:1px solid #35777a;background:#133c48;padding:8px 12px;border-radius:20px;font-size:12px;font-weight:700;text-decoration:none;min-height:36px}
+.v3-sources a:hover{text-decoration:underline;background:#1a535c}
+.v3-miniquiz{border:1px solid #3c6a7f;background:linear-gradient(120deg,#122e42,#113e45);border-radius:15px;padding:18px;margin:22px 0}
+.v3-miniquiz p{font-size:14px;margin:10px 0}
+.v3-answer{display:flex;align-items:start;gap:9px;padding:9px;margin:7px 0;border-radius:10px;border:1px solid #35617a;background:#102a40;font-size:13px}
+.v3-answer:has(input:checked){border-color:#57bda4;background:#17433f}
+.v3-answer input{margin-top:3px;accent-color:#6af3d1}
+.v3-result{color:#d3e9f0;font-size:13px;margin:12px 0;line-height:1.55}
+.v3-lab-card{margin-top:22px;padding:21px}
+.v3-lab-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.v3-control{display:flex;flex-direction:column;gap:6px}
+.v3-control label{color:#b9d4df;font-size:12px;font-weight:800}
+.v3-control input,.v3-control select{color:#f5fffd;background:#0d2438;border:1px solid #3e6c7e;border-radius:10px;padding:11px;min-width:0;width:100%}
+.v3-output{padding:15px;background:#0a2839;border:1px solid #4b6a75;border-radius:13px;margin:17px 0 0;line-height:1.5}
+.v3-output strong{font-size:20px;color:#8df9de}
+.v3-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.v3-metrics>div{padding:11px;border:1px solid #2f596a;background:#112f46;border-radius:11px}
+.v3-metrics small{display:block;color:#a0bbcc;font-size:11px}
+.v3-metrics strong{display:block;margin-top:5px;color:#ecfff9;font-size:17px}
+.v3-warning{border-left:3px solid #ffd78b;background:#3d342c;border-radius:5px 10px 10px 5px;padding:11px 12px;margin:12px 0;color:#ffe4ae;font-size:12px}
+.v3-pro-controls{display:flex;gap:9px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:8px 15px}
+.v3-pro-controls button{border:1px solid #56bba8;background:#134648;color:#aef8dd;border-radius:10px;padding:9px 12px;font-size:12px;font-weight:800}
+.v3-pro-controls button[aria-pressed="true"]{background:#68eed0;color:#082c2c}
+.v3-chart-host{width:100%;height:290px;position:relative}
+.v3-pro-panel{min-height:320px;background:#0b2033;padding:5px 12px 12px}
+.v3-pro-panel .v3-tradingview{display:block;text-align:right;font-size:11px;color:#b3c6d1;padding:5px 3px}
+.v3-pro-panel .v3-tradingview a{color:#7dffe1}
+.v3-caption{font-size:11px;line-height:1.5;color:#b5c8d4;margin:6px 5px}
+.v3-pro-error{border:1px solid #52677b;background:#1c2d3d;padding:12px;border-radius:11px;font-size:12px;line-height:1.55;color:#ffdaaa;margin:12px}
+.v3-headline{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:0 0 15px}
+.v3-headline h2{margin:0}
+.v3-tag{display:inline-block;border:1px solid #62bda8;border-radius:50px;padding:5px 9px;color:#96f9dd;font-size:11px;font-weight:800}
+.v3-lab-note{font-size:12px;color:#bbd4dc;margin:12px 0 0;line-height:1.6}
+.v3-learned{font-size:12px;color:#d9e7ee;background:#153748;border-left:3px solid #6df0d1;padding:11px 14px;margin:12px 0;border-radius:7px}
+@media(max-width:1000px){.v3-lab-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.v3-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.v3-learn-filter{display:grid;grid-template-columns:1fr 1fr}.v3-learn-filter label{grid-column:1/-1}.v3-learn-filter input{grid-column:1/-1;width:100%}.v3-learn-filter select{grid-column:1/-1}.v3-lab-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.v3-lab-card{padding:15px}.v3-pro-controls{justify-content:center}.v3-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:350px){.v3-lab-grid,.v3-metrics{grid-template-columns:1fr}}

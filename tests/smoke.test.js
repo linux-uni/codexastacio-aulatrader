@@ -21,7 +21,7 @@ test('the complete learning lab is connected to navigation and help',()=>{
   assert.ok(!/Lía|Lia · Tutor de trading/.test(html));
 });
 test('application has all local dependencies and required PWA assets',()=>{
-  for(const path of ['risk.js','v2.css','manifest.webmanifest','sw.js','app-icon.svg','dante-realista.webp','dante-help-futurista.webp']){
+  for(const path of ['risk.js','lab-v3.js','lab-ui-v3.js','v3-addon.js','academy-v3.js','v2.css','v3.css','manifest.webmanifest','sw.js','app-icon.svg','dante-realista.webp','dante-help-futurista.webp']){
     assert.ok(fs.existsSync(path),path);
   }
   const manifest=JSON.parse(file('manifest.webmanifest'));
@@ -29,5 +29,5 @@ test('application has all local dependencies and required PWA assets',()=>{
   assert.equal(manifest.start_url,'./');
   const sw=file('sw.js');
   assert.ok(sw.includes('addAll(ASSETS)'));
-  assert.ok(sw.includes('aulatrader-academy-v2'));
+  assert.ok(sw.includes('aulatrader-academy-v3'));
 });
