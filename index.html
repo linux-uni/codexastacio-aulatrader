@@ -69,6 +69,8 @@
   <script src="./risk.js"></script>
   <script src="./academy-v3.js"></script>
   <script src="./lab-v3.js"></script>
+  <script src="./lab-ui-v3.js"></script>
+  <script src="./v3-addon.js"></script>
   <script src="./vendor/lightweight-charts.standalone.production.js"></script>
   <script>
   (() => {
@@ -228,7 +230,8 @@
       }
       svg.innerHTML=grid+bars;
     }
-    const bindBase=bindPage;bindPage=function(){bindBase();bindLab()};
+    const baseToolsPageV3=toolsPage;toolsPage=function(){return baseToolsPageV3()+AulaLabUIV3.markup()};
+    const bindBase=bindPage;bindPage=function(){bindBase();bindLab();AulaLabUIV3.init();AulaAddonV3.bind({state,save,render,lessons,getOpenLesson:()=>openLesson})};
     const chartBase=chart;chart=function(){if(state.chartMode==='candles')drawCandles();else chartBase()};
 
     function glossPage(){return `<div class="page-head"><div class="eyebrow">Biblioteca rápida</div><h1>Diccionario de trading</h1><p>Los conceptos básicos explicados en lenguaje sencillo. Busca una palabra para entender su significado.</p></div><input type="search" class="searchbox" id="glossSearch" placeholder="Buscar: vela, riesgo, spread..." aria-label="Buscar concepto"><div class="glossary" id="glossList">${glossMarkup('')}</div>${alertNote()}`;}
@@ -266,7 +269,7 @@
     $('logout').onclick=()=>{state.logged=false;save();showApp()};
     $('tutorFab').onclick=()=>{$('chatPanel').classList.contains('hidden')?openTutor():closeTutor()};$('closeChat').onclick=closeTutor;$('topTutor').onclick=openTutor;$('helpSidebar').onclick=openTutor;
     $('chatForm').onsubmit=e=>{e.preventDefault();ask($('chatInput').value)};document.querySelectorAll('[data-question]').forEach(b=>b.onclick=()=>ask(b.dataset.question));
-    const oldRender=render;render=function(){oldRender();if(current==='sim'&&$('simChart'))chart()};
+    const oldRender=render;render=function(){AulaAddonV3.destroy();oldRender();if(current==='sim'&&$('simChart'))chart();if(current==='sim'&&state.chartPro)AulaAddonV3.drawPro(state)};
     showApp();
   })();
   </script>
