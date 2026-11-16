@@ -1,4 +1,4 @@
-name: Calidad AulaTrader v2
+name: Calidad AulaTrader v3
 on:
   push:
     branches: [main, 'feature/**']
@@ -20,4 +20,8 @@ jobs:
       - name: Validar sintaxis del módulo de riesgo y el service worker
         run: |
           node --check risk.js
+          node --check lab-v3.js
+          node --check lab-ui-v3.js
+          node --check v3-addon.js
+          node --check academy-v3.js
           node --check sw.js
