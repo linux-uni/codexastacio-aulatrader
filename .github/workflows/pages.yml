@@ -25,10 +25,17 @@ jobs:
         uses: actions/checkout@v4
       - name: Configurar Pages
         uses: actions/configure-pages@v5
+      - name: Instalar gráficos de código abierto (v5.3.0)
+        run: |
+          npm install --no-save --ignore-scripts --no-audit --no-fund lightweight-charts@5.3.0
+          test -s node_modules/lightweight-charts/dist/lightweight-charts.standalone.production.js
       - name: Preparar archivos web
         run: |
-          mkdir -p _site
-          cp index.html favicon.svg dante-avatar.svg dante-realista.webp dante-help-futurista.webp risk.js v2.css manifest.webmanifest app-icon.svg sw.js _site/
+          mkdir -p _site/vendor
+          cp index.html favicon.svg dante-avatar.svg dante-realista.webp dante-help-futurista.webp risk.js lab-v3.js lab-ui-v3.js v3-addon.js academy-v3.js v2.css v3.css manifest.webmanifest app-icon.svg sw.js _site/
+          cp node_modules/lightweight-charts/dist/lightweight-charts.standalone.production.js _site/vendor/
+          cp vendor/TRADINGVIEW_NOTICE vendor/APACHE-2.0.txt _site/vendor/
+          touch _site/.nojekyll
           touch _site/.nojekyll
       - name: Subir sitio estatico
         uses: actions/upload-pages-artifact@v4
